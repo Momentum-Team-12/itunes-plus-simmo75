@@ -1,0 +1,35 @@
+header {
+    color: rgba(254, 233, 186, 0.765);
+    background-color: #f36e5a;
+    border: 3px solid #80ffd4;
+    border-width: 0px 0px 4px 0px;
+    padding: 1px;
+    /* padding-left: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%; */
+    /* text-align: left; */
+}
+
+#profile {
+    flex-wrap: wrap;
+    font-family: 'Amsterdam Graffiti', sans-serif;
+    font-size: xx-large;
+
+
+}
+
+.graf-font {
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'SoupLeaf', sans-serif;
+    font-size: 100px;
+    color: #80ffd4;
+
+
+
+}
+
+.row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
