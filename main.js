@@ -2,7 +2,7 @@ console.log('linked')
 
 let profileDiv = document.querySelector('#profile')
 
-fetch('https://itunes.apple.com/search?term=jdilla&media=music', {
+fetch('https://proxy-itunes-api.glitch.me/search?term=jdilla&media=music', {
   method: 'GET',
 })
   .then(function (response) {
@@ -15,19 +15,27 @@ fetch('https://itunes.apple.com/search?term=jdilla&media=music', {
 
     let results = data.results.slice(1)
     for (let result of results) {
+
+
+      let resultsDiv = document.createElement('div')
+      resultsDiv.classList.add('results')
+
+
       let nameDiv = document.createElement('p')
       nameDiv.classList.add('artist')
       nameDiv.innerText = result.artistName
-      profileDiv.appendChild(nameDiv)
+      resultsDiv.appendChild(nameDiv)
 
       let songDiv = document.createElement('p')
       songDiv.classList.add('song')
       songDiv.innerText = result.trackName
-      profileDiv.appendChild(songDiv)
+      resultsDiv.appendChild(songDiv)
 
       let artDiv = document.createElement('img')
       artDiv.classList.add('song')
       artDiv.src = result.artworkUrl100
-      profileDiv.appendChild(artDiv)
+      resultsDiv.appendChild(artDiv)
+
+      profileDiv.appendChild(resultsDiv)
     }
   })
