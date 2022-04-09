@@ -4,12 +4,13 @@ header {
     border: 3px solid #80ffd4;
     border-width: 0px 0px 4px 0px;
     padding: 1px;
-    
+
 }
 
 #profile {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     font-family: 'Amsterdam Graffiti', sans-serif;
     font-size: x-large;
 
@@ -21,20 +22,20 @@ header {
     font-family: 'SoupLeaf', sans-serif;
     font-size: 100px;
     color: #80ffd4;
+    
 
 }
 
-.results{
+.results {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
-    /* border: 3px solid red; */
     text-align: center;
     width: 200px;
-    padding: 20px;
-    
+    padding: 50px;
+
 }
-.img{
+
+.img {
     width: 100%;
 
 }
