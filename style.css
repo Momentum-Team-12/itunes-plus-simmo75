@@ -38,10 +38,12 @@ header {
 
 .img {
     width: 100%;
+    border: 3px solid #f36e5a;
+    border-width: 4px 4px 4px 4px;
 
 }
 body {
-background-color: #a7deec;
+background-color: #34b4d4;
 background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */

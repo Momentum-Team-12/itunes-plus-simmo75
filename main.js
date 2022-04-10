@@ -33,6 +33,18 @@ fetch('https://proxy-itunes-api.glitch.me/search?term=jdilla&media=music', {
       songDiv.innerText = result.trackName
       resultsDiv.appendChild(songDiv)
 
+      let releaseDiv = document.createElement('div')
+      releaseDiv.classList.add('release')
+      releaseDiv.innerText = result.releaseDate
+      resultsDiv.appendChild(releaseDiv)
+      
+      
+      
+      
+      
+      
+      
+
       profileDiv.appendChild(resultsDiv)
     }
   })
