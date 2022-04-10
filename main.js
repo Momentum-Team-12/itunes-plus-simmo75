@@ -37,7 +37,18 @@ fetch('https://proxy-itunes-api.glitch.me/search?term=jdilla&media=music', {
       releaseDiv.classList.add('release')
       releaseDiv.innerText = result.releaseDate
       resultsDiv.appendChild(releaseDiv)
-      
+    
+      // function releaseDate(year) {
+       
+      //  return year.charAt(0).getFullYear() + year.slice(3);
+      // }
+      // const releaseDate = new Date(document.createElement);
+      // let year = releaseDate.getFullYear();
+
+
+    
+
+
       
       
       
