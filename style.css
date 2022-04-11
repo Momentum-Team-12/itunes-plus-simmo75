@@ -4,7 +4,7 @@ header {
     border: 3px solid #80ffd4;
     border-width: 4px 4px 4px 4px;
     padding: 1px;
-    
+
 
 }
 
@@ -12,6 +12,16 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-family: 'Amsterdam Graffiti', sans-serif;
+    font-size: x-large;
+    text-decoration: double;
+    text-shadow: 1px 1px 1px #80ffd4;
+}
+
+.tag-font {
+    flex-wrap: wrap;
+    padding-inline-start: 60px;
+    padding-top: 20px;
     font-family: 'Amsterdam Graffiti', sans-serif;
     font-size: x-large;
     text-decoration: double;
@@ -41,12 +51,14 @@ header {
     width: 100%;
     border: 3px solid #f36e5a;
     border-width: 4px 4px 4px 4px;
-   
+
 
 }
+
 body {
-/* background-color: #34b4d4; */
-background-color: #adb0ad;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    /* background-color: #34b4d4; */
+    background-color: #adb0ad;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
+
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
