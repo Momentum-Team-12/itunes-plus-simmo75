@@ -1,10 +1,12 @@
 console.log('linked')
+//checking my main.js file is linked to my index.html doc//
 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild)
   }
 }
+//function to remove all child elements from the parent, to clear the document when searching//
 
 let profileDiv = document.querySelector('#profile')
 
@@ -17,6 +19,7 @@ searchform.addEventListener('submit', function (event) {
   console.log(userInput.value)
 
   removeAllChildNodes(profileDiv)
+  //removes child elements, pre search input//
 
   fetch(
     `https://proxy-itunes-api.glitch.me/search?term=${userInput.value}&media=music`,
@@ -24,6 +27,8 @@ searchform.addEventListener('submit', function (event) {
       method: 'GET',
     },
   )
+    //defining the website/database for our search and then//
+
     .then(function (response) {
       return response.json()
     })
@@ -34,26 +39,30 @@ searchform.addEventListener('submit', function (event) {
       for (let result of results) {
         let resultsDiv = document.createElement('div')
         resultsDiv.classList.add('results')
-
-        let nameDiv = document.createElement('div')
-        nameDiv.classList.add('artist')
-        nameDiv.innerText = result.artistName
-        resultsDiv.appendChild(nameDiv)
-
+        // this div-type element is the container for all artist info
         let artDiv = document.createElement('img')
         artDiv.classList.add('img')
         artDiv.src = result.artworkUrl100
         resultsDiv.appendChild(artDiv)
+        // this div-type element is the container for all album artwork info
+        let audioDiv = document.createElement('audio')
+        audioDiv.classList.add('audioPreview')
+        audioDiv.src = result.previewUrl
+        audioDiv.controls = 'controls'
+        resultsDiv.appendChild(audioDiv)
 
         let songDiv = document.createElement('div')
         songDiv.classList.add('song')
         songDiv.innerText = result.trackName
         resultsDiv.appendChild(songDiv)
+        // this div-type element is the container for all song info
 
-        let releaseDiv = document.createElement('div')
-        releaseDiv.classList.add('release')
-        releaseDiv.innerText = result.releaseDate
-        resultsDiv.appendChild(releaseDiv)
+
+
+        // let releaseDiv = document.createElement('div')
+        // releaseDiv.classList.add('release')
+        // releaseDiv.innerText = result.releaseDate
+        // resultsDiv.appendChild(releaseDiv)
 
         profileDiv.appendChild(resultsDiv)
         profileDiv.remove
