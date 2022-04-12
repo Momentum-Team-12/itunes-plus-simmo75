@@ -4,8 +4,6 @@ header {
     border: 3px solid #80ffd4;
     border-width: 4px 4px 4px 4px;
     padding: 1px;
-
-
 }
 
 #profile {
@@ -37,7 +35,6 @@ header {
     font-size: 100px;
     color: #80ffd4;
     text-shadow: 2px 2px 8px #0080ff;
-
 }
 
 .results {
@@ -46,7 +43,6 @@ header {
     text-align: center;
     width: 300px;
     padding: 25px;
-
 }
 
 .img {
@@ -57,12 +53,10 @@ header {
     margin-left: 12.5%;
     border: 3px solid #f36e5a;
     border-width: 4px 4px 4px 4px;
-
-
 }
 
 body {
-    background-color: #adb0ad;
+    background-color: #82b0a7;
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
 
@@ -73,4 +67,5 @@ body {
 .audioPreview {
     padding-top: 10px;
 }
+
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
