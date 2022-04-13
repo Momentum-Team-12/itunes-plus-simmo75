@@ -41,7 +41,7 @@ searchform.addEventListener('submit', function (event) {
 
         let artDiv = document.createElement('img')
         artDiv.classList.add('img')
-        artDiv.src = result.artworkUrl100
+        artDiv.src = result.artworkUrl100.slice(0, -13) + "300x300bb.jpg"
         resultsDiv.appendChild(artDiv)
         // this div-type element is the container for all album artwork info
 
