@@ -19,7 +19,7 @@ header {
 
 .tag-font {
     flex-wrap: wrap;
-    padding-inline-start: 60px;
+    padding-inline-start: 40px;
     font-family: 'Alpha Echo', sans-serif;
     padding-top: 20px;
     font-size: x-large;
@@ -60,7 +60,7 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
 }
 
-.song {
+.artist {
     padding-top: 10px;
 }
 
@@ -68,4 +68,24 @@ body {
     padding-top: 10px;
 }
 
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+.releaseDate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Alpha Echo', sans-serif;
+    color: #0080ff;
+    font-size: 12px;
+    text-decoration: double;
+    text-shadow: 1px 1px 1px #80ffd4;
+}
+
+.searchBar {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Alpha Echo', sans-serif;
+    color: #000000;
+    font-size: 12px;
+    text-decoration: solid;
+    text-shadow: 1px 1px 1px #80ffd4;
+}
