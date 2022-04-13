@@ -1,7 +1,7 @@
 header {
     color: rgba(254, 233, 186, 0.765);
-    background-color: #f36e5a;
-    border: 3px solid #80ffd4;
+    background-color: #303f5f;
+    border: 3px solid #3e2e62a8;
     border-width: 4px 4px 4px 4px;
     padding: 1px;
 }
@@ -10,21 +10,18 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-family: 'Alpha Echo', sans-serif;
-    color: #0080ff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1c2639;
+    text-shadow: 1px 1px 2px #0080ff4e;
     font-size: large;
-    text-decoration: double;
-    text-shadow: 1px 1px 1px #80ffd4;
 }
 
 .tag-font {
     flex-wrap: wrap;
     padding-inline-start: 40px;
-    font-family: 'Alpha Echo', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     padding-top: 20px;
     font-size: x-large;
-    text-decoration: double;
-    text-shadow: 1px 1px 1px #80ffd4;
 }
 
 
@@ -33,7 +30,7 @@ header {
     text-align: center;
     font-family: 'SoupLeaf', sans-serif;
     font-size: 100px;
-    color: #80ffd4;
+    color: #80ffd5d9;
     text-shadow: 2px 2px 8px #0080ff;
 }
 
@@ -51,13 +48,12 @@ header {
     align-items: center;
     width: 75%;
     margin-left: 12.5%;
-    border: 3px solid #f36e5a;
+    border: 3px solid #3e2e62a8;
     border-width: 4px 4px 4px 4px;
 }
 
 body {
-    background-color: #82b0a7;
-    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    background-color: #303f5fbd;
 }
 
 .artist {
@@ -72,20 +68,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    font-family: 'Alpha Echo', sans-serif;
-    color: #0080ff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1c2639;
+    text-shadow: 1px 1px 1px #0080ff4e;
     font-size: 12px;
-    text-decoration: double;
-    text-shadow: 1px 1px 1px #80ffd4;
+   
 }
 
 .searchBar {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    font-family: 'Alpha Echo', sans-serif;
-    color: #000000;
-    font-size: 12px;
-    text-decoration: solid;
-    text-shadow: 1px 1px 1px #80ffd4;
+    
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #000000;;
+    text-shadow: 1px 1px 1px #0080ff4e;
+    font-size: 13px;
+    
+    
 }
